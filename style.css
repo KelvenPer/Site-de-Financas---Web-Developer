@@ -176,3 +176,74 @@ canvas {
     flex-direction: column;
   }
 }
+
+
+/* Botão flutuante "+" */
+.btn-flutuante {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 60px;
+  height: 60px;
+  background-color: #4caf50;
+  color: white;
+  font-size: 30px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  transition: background 0.3s;
+}
+
+.btn-flutuante:hover {
+  background-color: #45a049;
+}
+
+/* Modal genérico */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-conteudo {
+  background: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+.modal-conteudo h2 {
+  margin-bottom: 20px;
+}
+
+.modal-conteudo ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+}
+
+.modal-conteudo ul li {
+  margin-bottom: 10px;
+}
+
+.modal-conteudo button {
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  background-color: #1e2a38;
+  color: white;
+  border-radius: 5px;
+}
+
+.modal-conteudo button:hover {
+  background-color: #4caf50;
+}
